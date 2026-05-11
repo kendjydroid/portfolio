@@ -6,7 +6,8 @@
 
 }
 
-:root{
+
+:root   {
     /* Colors */
     --color-background: #FFFFFF;
     --color-background-alt: #F5F5F5;
@@ -32,3 +33,35 @@
     --border-radius: 8px;
     --navbar-height: 80px;
 }
+
+
+
+/* ============================================
+   BASE STYLES      
+   ============================================ */
+
+   body  {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.5;
+   }
+
+
+   a  {
+    text-decoration: none;
+    color: inherit;
+   }
+
+
+   ul  {
+    list-style: none;
+   }
+
+   img  {
+    max-width: 100%;
+    height: auto;
+    display: block;
+   }
+
