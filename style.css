@@ -79,3 +79,52 @@
       section, header  {
         padding: var(--spacing-xl) 0;
       }
+
+
+      /* ============================================
+         NAVBAR
+         ============================================ */
+
+         #navbar  {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--navbar-height);
+            background-color: var(--color-background-alt);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+         }
+
+         .nav-container  {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+         }
+
+         .nav-logo  {
+            font-size: var(--font-size-h3);
+            font-weight: 600;
+         }
+
+         .nav-links {
+            display: flex;
+            gap: var(--spacing-lg);
+         }
+
+         .nav-links a{
+            font-size: var(--font-size-base);
+            font-weight: 500;
+            transition: opacity 0.2s ease;
+         }
+
+
+         .nav-links a:hover {
+            opacity: 0.6;
+         }
+
+         body {
+            padding-top: var(--navbar-height);
+         }
