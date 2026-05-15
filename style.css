@@ -307,3 +307,125 @@
                text-align: center;
                font-weight: 500;
             }
+
+            /* ============================================
+               PROJECTS
+               ============================================ */
+               #projects {
+                  background-color: var(--color-background-alt);
+               }
+
+               .projects-container {
+                  display: flex;
+                  flex-direction: column;
+                  gap: var(--spacing-lg);
+               }
+
+               .projects-grid {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                  gap: var(--spacing-md);
+               }
+
+               .project-card {
+                  background-color: var(--color-background);
+                  padding: var(--spacing-md);
+                  border: 1px solid var(--color-border);
+                  border-radius: var(--border-radius);
+                  transition: transform 0.2s ease;
+               }
+
+               .project-card:hover {
+                  transform: translateY(-4px);
+               }
+
+               .project-title {
+                  font-size: var(--font-size-h3);
+                  font-weight: 600;
+                  margin-bottom: var(--spacing-sm);
+               }
+
+               .project-description {
+                  font-size: var(--font-size-base);
+                  color: var(--color-text-muted);
+                  line-height: 1.6;
+                  margin-bottom: var(--spacing-md);
+               }
+
+               .project-stack {
+                  font-size: 14px;
+                  color: var(--color-text-muted);
+                  font-weight: 500;
+               }
+
+               /* ============================================
+                  CONTACT
+                  ============================================ */
+
+                  #contact {
+                     background-color: var(--color-background);
+                  }
+
+                  .contact-container {
+                     display: flex;
+                     flex-direction: column;
+                     gap: var(--spacing-lg);
+                  }
+
+                  .contact-content {
+                     display: flex;
+                     justify-content: space-between;
+                     gap: var(--spacing-xl);
+                  }
+
+                  .contact-links {
+                     display: flex;
+                     flex: 1;
+                     flex-direction: column;
+                     gap: var(--spacing-md);
+                  }
+
+                  .contact-links a {
+                     font-size: var(--font-size-base);
+                     font-weight: 500;
+                     transition: opacity 0.2s ease;
+                     align-self: flex-start;
+                  }
+
+                  .contact-links a:hover {
+                     opacity: 0.6;
+                  }
+
+                  .contact-form {
+                     flex: 1;
+                     display: flex;
+                     flex-direction: column;
+                     gap: var(--spacing-md);
+                  }
+
+                  .form-input, .form-textarea {
+                     background-color: var(--color-background);
+                     color: var(--color-text);
+                     width: 100%;
+                     padding: 12px 16px;
+                     font-family: var(--font-family);
+                     font-size: var(--font-size-base);
+                     border: 1px solid var(--color-border);
+                     border-radius: var(--border-radius);
+                     transition: border-color 0.2s ease;
+                  }
+
+                  .form-input:focus,.form-textarea:focus {
+                     outline: none;
+                     border-color: var(--color-text);
+                  }
+
+                  .form-textarea {
+                     resize: vertical;
+                     min-height: 120px;
+                     font-family: var(--font-family);
+                  }
+
+                  .contact-form .btn {
+                     align-self: flex-start;
+                  }
