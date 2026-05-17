@@ -4,7 +4,7 @@ A responsive personal portfolio website built from scratch using vanilla HTML, C
 
 ## Live Demo 
 
-[View live portfolio]
+[View live portfolio](https://kendjydroid.github.io/portfolio/)
 
 ## About 
 
